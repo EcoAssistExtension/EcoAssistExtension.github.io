@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="EcoAssistStylesheet.css" />
+</head>
+<body>
+  <div id="myNavbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="UserSupport.html">User Support</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a class="active" href="Blog.html">Blog</a></li>
+      <li><a href="https://chrome.google.com/webstore/detail/ecoassist/cgjfebkepajcbdimffmijgccmaghlbec">Download Now</a></li>
+    </ul>
+  </div>
+  <div class="header">
+  <img src="images/EcoAssistLogo.png" alt="EcoAssist Logo" style="width:10vw">
+  </div>
+  <form role="search" id="form">
+    <input type="search" id="query" name="q" placeholder="Search our blog posts...">
+    <button>Go!</button>
+  </form>
+  <style>
+      form {
+        background-color: #78CA63;
+        margin: 0px 35.5% 10px;
+        width: 400px;
+        height: 44px;
+        border-radius: 5px;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+      }
+
+      input {
+        all: unset;
+        font: 16px system-ui;
+        color: #000000
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+      }
+
+      ::placeholder {
+        color: #000000;
+        opacity: 0.5;
+      }
+
+      svg {
+        color: #fff;
+        fill: currentColor;
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+      }
+
+      button {
+        all: unset;
+        width: 44px;
+        height: 44px;
+      }
+    </style>
+  <script>
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    const site = 'EcoAssistExtension.com';
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + q.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+    f.addEventListener('submit', submitted);
+  </script>
+<div class="columnaboutus">
+  <div class="card">
+    <img src="tbd" alt="A photo of the thing for the post" style="width:100%">
+    <div class="container">
+      <h2>Title of Blog Post</h2>
+      <p class="title">Date published and author</p>
+      <p>article content</p>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

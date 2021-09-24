@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="EcoAssistStylesheet.css" />
+</head>
+<body>
+  <div id="myNavbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a class="active" href="UserSupport.html">User Support</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="https://chrome.google.com/webstore/detail/ecoassist/cgjfebkepajcbdimffmijgccmaghlbec">Download Now</a></li>
+    </ul>
+  </div>
+<div id ="body2">
+  <div class="header">
+  <img src="images/EcoAssistLogo.png" alt="EcoAssist Logo" style="width:10vw">
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>Need (Eco)Assistance?</h1>
+      <h5>Frequently Asked Questions - Updated April 30, 2021</h5>
+      <button type="button" class="collapsible">How do I download EcoAssist?</button>
+<div class="content">
+  <p>You can download EcoAssist by clicking the "Download Now" tab of this website! You will find it to the far right of the menu bar. Click there and you will be brought to the EcoAssist page of the Goggle Chrome Web Store."</p>
+</div>
+<button type="button" class="collapsible">What data is EcoAssist collecting?</button>
+<div class="content">
+  <p>We collect data about where EcoAssist is being used, how many people are using it, how many tabs are opened, how long tabs remain open, and how many times users click buttons. That said, EcoAssist does not collect any individual data. We can not see what you search, and we do not collect any data about each individual user. We collect analytics about our user base as a whole.</p>
+</div>
+<button type="button" class="collapsible">What content can I expect?</button>
+<div class="content">
+  <p></p>
+  <img src="images/faq3.png" alt="Pie chart" style="width:90%;"> <br><br>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeq");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Get In Touch!</h3>
+      <p><b>Instagram: </b>@eco_assist_extension<br>
+         <b>Email: </b>eco.assist.extension@gmail.com<br>
+         <b>TikTok: </b>@ecoassist<br></p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
