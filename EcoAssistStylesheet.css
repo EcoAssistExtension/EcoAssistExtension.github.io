@@ -45,7 +45,7 @@ li a:hover {
   box-sizing: border-box;
 }
 body {
-  font-family: "Be Vietnam",  "Comic Sans MS";
+  font-family: "Be Vietnam",  "Arial", sans-serif;
   padding: 20px;
   background: #ffffff;
 }
